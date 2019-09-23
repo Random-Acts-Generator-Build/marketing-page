@@ -307,13 +307,14 @@ header .buttons .btn:hover {
   margin-left: 10px;
   text-align: center;
   width: 250px;
+  line-height: 20px;
 }
 .teams .txt h1 {
   font-size: 1.8rem;
   font-weight: 600;
 }
 .teams .txt h3 {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 .teams .lead {
   display: flex;
