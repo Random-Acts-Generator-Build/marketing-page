@@ -131,6 +131,7 @@ table {
 }
 html {
   font-size: 62.5%;
+  width: 100vw;
 }
 html,
 body {
@@ -164,16 +165,26 @@ nav .navlogo {
   letter-spacing: 0.07em;
   padding-left: 30px;
 }
+@media (max-width: 500px) {
+  nav .navlogo {
+    font-size: 1.4rem;
+    padding-left: 10px;
+  }
+}
 nav .nava {
   justify-content: space-between;
   display: flex;
   width: 33.3333vw;
   align-items: space-between;
-  float: right;
 }
 @media (max-width: 1024px) {
   nav .nava {
     width: 43vw;
+  }
+}
+@media (max-width: 500px) {
+  nav .nava {
+    width: 66vw;
   }
 }
 nav .nava a {
@@ -186,12 +197,15 @@ nav .nava a {
   letter-spacing: 0.17em;
   padding-top: 5px;
 }
+@media (max-width: 500px) {
+  nav .nava a {
+    font-size: 0.9rem;
+    letter-spacing: 0.05rem;
+  }
+}
 .nava a:hover {
   color: #c99034;
   font-weight: 700;
-}
-.nava a.active {
-  color: olivedrab;
 }
 footer {
   width: 100vw;
@@ -237,6 +251,9 @@ footer .footer a .media {
 .footer a:hover {
   color: #cb8b41;
 }
+.cotains {
+  width: 100vw;
+}
 header {
   display: flex;
   height: 85vh;
@@ -253,20 +270,42 @@ header {
   text-align: center;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  header {
+    justify-content: flex-start;
+    padding-left: 10px;
+  }
+}
 header .bigtxt {
-  width: 52%;
+  width: 52vw;
   font-size: 4rem;
   font-weight: 700;
   line-height: 40px;
   padding-top: 50px;
 }
+@media (max-width: 500px) {
+  header .bigtxt {
+    font-size: 2.4rem;
+    line-height: 25px;
+    width: 40vw;
+  }
+}
 header .smalltxt {
   padding-bottom: 200px;
-  width: 52%;
+  width: 52vw;
   margin-top: 8px;
   font-size: 1.8rem;
   font-weight: 400;
   line-height: 20px;
+}
+@media (max-width: 500px) {
+  header .smalltxt {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 20px;
+    width: 40vw;
+    padding-bottom: 150px;
+  }
 }
 .teams {
   width: 100vw;
@@ -280,9 +319,18 @@ header .smalltxt {
   padding-right: 20px;
   padding-bottom: 150px;
 }
-@media (max-width: 910px) {
+@media (max-width: 780px) {
   .teams .team {
     height: 100vh;
+  }
+}
+@media (max-width: 500px) {
+  .teams .team {
+    height: 75%;
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-bottom: 0px;
+    padding-top: 30px;
   }
 }
 .teams .ui,
@@ -302,6 +350,11 @@ header .smalltxt {
   display: flex;
   align-items: center;
 }
+@media (max-width: 500px) {
+  .teams .pic {
+    margin-right: 3px;
+  }
+}
 .teams .img {
   width: 30%;
   margin-left: 10px;
@@ -309,17 +362,30 @@ header .smalltxt {
   border-radius: 100%;
   border: 3px solid #cb8b41;
 }
+@media (max-width: 500px) {
+  .teams .img {
+    width: 40%;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
 .teams .txt {
   margin-left: 10px;
   text-align: center;
   width: 250px;
   line-height: 20px;
 }
-@media (max-width: 910px) {
+@media (max-width: 780px) {
   .teams .txt {
     width: 210px;
     line-height: 17px;
-    border: 2px solid red;
+  }
+}
+@media (max-width: 500px) {
+  .teams .txt {
+    width: 30vh;
+    width: 110px;
+    line-height: 17px;
   }
 }
 .teams .txt h1 {
@@ -328,6 +394,11 @@ header .smalltxt {
 }
 .teams .txt h3 {
   font-size: 1.2rem;
+}
+@media (max-width: 500px) {
+  .teams .txt h3 {
+    display: none;
+  }
 }
 .teams .lead {
   display: flex;
@@ -343,16 +414,21 @@ header .smalltxt {
   text-align: center;
   margin: 5px;
 }
+@media (max-width: 500px) {
+  .icon {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
 .buttons {
   display: flex;
   justify-content: space-around;
   width: 92vw;
-  height: 0px;
   margin-bottom: 110px;
 }
 @media (max-width: 1024px) {
   .buttons {
-    margin-bottom: 140px;
+    margin-right: 40px;
   }
 }
 .buttons .btn {
@@ -373,7 +449,13 @@ header .smalltxt {
   .buttons .btn {
     width: 150px;
     height: 40px;
-    border: 3px solid green;
+  }
+}
+@media (max-width: 500px) {
+  .buttons .btn {
+    width: 70px;
+    height: 35px;
+    margin: none;
   }
 }
 .buttons .btn:hover {
