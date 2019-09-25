@@ -9,13 +9,12 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 60px;
+  top: 0;
   background: white;
   width: 100vw;
-  margin: auto;
   position: fixed;
-  margin: -20px auto;
-  padding: 5px;
+  z-index: 1;
+  border-bottom: 1px solid #acc5a0;
 }
 
 @media (max-width: 800px) {
@@ -31,40 +30,39 @@ nav {
 
 nav p {
   font-size: 2.5rem;
-  width: 50%;
+  width: 50vw;
+  padding-left: 40px;
   font-family: "Lobster", cursive;
   color: #cb8b41;
+  font-weight: 700;
+  letter-spacing: .07em;
 }
 
 @media (max-width: 800px) {
   nav p {
     font-size: 2.2rem;
     background: white;
-    width: 100%;
     text-align: center;
-    margin: 5px 0 0 0;
-    padding: 1%;
   }
 }
 
 nav ul {
-  width: 50%;
+  width: 33.3333vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   font-size: 1.2rem;
-  margin-right: 2%;
 }
 
 @media (max-width: 800px) {
   nav ul {
-    font-size: 1.1rem;
+    font-size: 1rem;
+    width: 80vw;
     background: white;
-    width: 100%;
-    margin: 0;
-    padding: 1%;
+    font-family: Styrene A Web, sans-serif;
   }
 }
 
@@ -74,9 +72,11 @@ nav li {
 
 nav a {
   text-decoration: none;
-  color: black;
+  color: olivedrab;
   font-weight: bold;
   padding: 2px;
+  font-weight: 600;
+  letter-spacing: 0.17em;
 }
 
 nav a:hover {
@@ -193,7 +193,7 @@ section .box {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 10px 0;
+  margin: 10px 5px;
 }
 
 @media (max-width: 500px) {
@@ -242,18 +242,18 @@ section img {
 footer {
   background: white;
   border-top: 2px solid #cb8b41;
-  border-bottom: 2px solid #cb8b41;
   color: #cb8b41;
   font-size: 1.2rem;
-  padding: 1%;
-  margin: 0 auto 30px auto;
-  height: 80px;
+  margin: 0 auto 50px auto;
+  height: 130px;
   width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -262,11 +262,15 @@ footer {
 footer h2 {
   font-family: "Lobster", cursive;
   font-size: 2.5rem;
+  letter-spacing: .07em;
+  font-weight: 700;
 }
 
 footer a {
   text-decoration: none;
   color: #cb8b41;
+  font-family: Styrene A Web, sans-serif;
+  letter-spacing: .17em;
 }
 
 footer a:hover {
