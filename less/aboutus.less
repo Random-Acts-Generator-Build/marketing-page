@@ -1,6 +1,8 @@
 // Home Content
 
-
+.cotains {
+  width: 100vw;
+}
 
 header {
     display: flex;
@@ -18,21 +20,44 @@ header {
     text-align: center;
     margin: 0 auto;
 
+    @media @phone {
+      justify-content: flex-start;
+      padding-left: 10px;
+            }
+
+
   .bigtxt{
-    width: 52%;
+    width: 52vw;
     font-size: 4rem;
     font-weight: 700;
     line-height: 40px;
     padding-top: 50px;
+
+    @media @phone {
+      font-size: 2.4rem;
+      line-height: 25px;
+      width: 40vw;
+
+            }
     
   }
     .smalltxt {
       padding-bottom: 200px;
-      width: 52%;
+      width: 52vw;
       margin-top:8px;
       font-size: 1.8rem;
       font-weight: 400;
       line-height: 20px;
+
+      @media @phone {
+        font-size: 1.4rem;
+        font-weight: 500;
+        line-height: 20px;
+        width: 40vw;
+        padding-bottom: 150px;
+  
+              }
+      
       
     }
 
@@ -55,6 +80,16 @@ width: 100vw;
   @media @tablet {
     height: 100vh;
   }
+
+  @media @phone {
+    height: 75%;
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-bottom: 0px;
+    padding-top: 30px;
+  }
+
+  
  }
 
 .ui, .be {
@@ -75,6 +110,10 @@ margin-right: 30px;
 display: flex;
 align-items: center;
 
+@media @phone {
+  margin-right: 3px;
+}
+
 }
 
  .img{
@@ -83,6 +122,12 @@ align-items: center;
    margin-top: 10px;
    border-radius: 100%;
    border: 3px solid #cb8b41;
+
+   @media @phone {
+    width: 40%;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
  }
 
  .txt{
@@ -94,8 +139,16 @@ align-items: center;
    @media @tablet {
     width: 210px;
     line-height: 17px;
-    border: 2px solid red;
   }
+
+
+  @media @phone {
+    width: 30vh;
+    width: 110px;
+    line-height: 17px;
+  }
+
+  
   
 
 
@@ -107,6 +160,10 @@ align-items: center;
 
    h3 {
      font-size: 1.2rem;
+
+     @media @phone {
+      display: none;
+    }
    }
  }
 
@@ -129,6 +186,11 @@ align-items: center;
   fill: currentColor;
   text-align: center;
   margin: 5px;
+
+  @media @phone {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
 }
 
 
@@ -139,14 +201,13 @@ align-items: center;
   display: flex;
   justify-content: space-around;
   width: 92vw; 
-  height: 0px;
   margin-bottom: 110px;
 
   @media @minidesktop{
- margin-bottom: 140px;
+ margin-right: 40px;
   }
  
-
+  
 
 .btn {
 // .buttonmix (#99b3af, #333, 5px, 0.9rem, 200px, 50px, 0px 20px 30px 20px, 750);
@@ -166,8 +227,14 @@ border: 0;
 @media @minidesktop{
   width: 150px;
   height:40px;
-  border: 3px solid green;
 }
+
+@media @phone {
+  width: 70px;
+  height: 35px;
+  margin: none;
+        }
+
 }
 
 .btn:hover{
