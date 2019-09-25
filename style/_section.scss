@@ -1,0 +1,44 @@
+section {
+  height: 100vh;
+  width: 100vw;
+  font-size: 2rem;
+  font-family: $primaryFont;
+  @media (max-width: $tablet) {
+    font-size: 1.5rem;
+  }
+  @media (max-width: $mobile) {
+    font-size: 1.4rem;
+  }
+  .box {
+    height: 32%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px 0;
+    @media (max-width: $mobile) {
+      padding: 0 2%;
+    }
+  }
+  .box1 {
+    flex-direction: row-reverse;
+    background: $secondary;
+  }
+  .box2 {
+    background: white;
+  }
+  .box3 {
+    flex-direction: row-reverse;
+    background: $secondary;
+  }
+  .txt {
+    width: 55%;
+    @media (max-width: $mobile) {
+      padding: 0 3%;
+    }
+  }
+  img {
+    height: 95%;
+    border-radius: 10px;
+    box-shadow: 6px 6px 4px grey;
+  }
+}
