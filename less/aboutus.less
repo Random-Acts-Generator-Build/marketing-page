@@ -51,6 +51,10 @@ width: 100vw;
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 150px;
+
+  @media @tablet {
+    height: 100vh;
+  }
  }
 
 .ui, .be {
@@ -86,6 +90,15 @@ align-items: center;
    text-align: center;
    width: 250px;
    line-height: 20px;
+
+   @media @tablet {
+    width: 210px;
+    line-height: 17px;
+    border: 2px solid red;
+  }
+  
+
+
    
    h1 {
      font-size: 1.8rem;
@@ -127,6 +140,13 @@ align-items: center;
   justify-content: space-around;
   width: 92vw; 
   height: 0px;
+  margin-bottom: 110px;
+
+  @media @minidesktop{
+ margin-bottom: 140px;
+  }
+ 
+
 
 .btn {
 // .buttonmix (#99b3af, #333, 5px, 0.9rem, 200px, 50px, 0px 20px 30px 20px, 750);
@@ -142,6 +162,12 @@ font-weight: 80;
 font-family: Styrene A Web,sans-serif;
 letter-spacing: .17rem;
 border: 0;
+
+@media @minidesktop{
+  width: 150px;
+  height:40px;
+  border: 3px solid green;
+}
 }
 
 .btn:hover{
@@ -152,39 +178,39 @@ border: 0;
 
 }
 
-.btts{
-display: flex;
-flex-direction: column;
-justify-content: space-around;
-margin: 0 auto;
-width: 15vw; 
-height: 70vh;
+// .btts{
+// display: flex;
+// flex-direction: column;
+// justify-content: space-around;
+// margin: 0 auto;
+// width: 15vw; 
+// height: 70vh;
 
-.tm{
-// .buttonmix (#99b3af, #333, 5px, 0.9rem, 200px, 50px, 0px 20px 30px 20px, 750);
-text-decoration: none;
-background: #99b3af;
-color: #333;
-border-radius: 5px; 
-font-size: 0.9rem;
-width: 200px;
-height: 60px;
-margin: 0px 20px 0px 20px;
-font-weight: 80;
-font-family: Styrene A Web,sans-serif;
-letter-spacing: .17rem;
-border: 0;
-}
+// .tm{
+// // .buttonmix (#99b3af, #333, 5px, 0.9rem, 200px, 50px, 0px 20px 30px 20px, 750);
+// text-decoration: none;
+// background: #99b3af;
+// color: #333;
+// border-radius: 5px; 
+// font-size: 0.9rem;
+// width: 200px;
+// height: 60px;
+// margin: 0px 20px 0px 20px;
+// font-weight: 80;
+// font-family: Styrene A Web,sans-serif;
+// letter-spacing: .17rem;
+// border: 0;
+// }
 
-.tm:hover{
-background: #cb8b41;
-color: white;
-}
+// .tm:hover{
+// background: #cb8b41;
+// color: white;
+// }
 
-.special {
-  display: none;
-}
-}
+// .special {
+//   display: none;
+// }
+// }
 
 
 
@@ -192,3 +218,6 @@ color: white;
 html{
   scroll-behavior: smooth;
 }
+
+
+
