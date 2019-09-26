@@ -1,249 +1,306 @@
 // Home Content
 
-.cotains {
-  width: 100vw;
-}
 
 header {
-    display: flex;
-    height: 85vh;
-    width: 100vw;
-    background-image: url(https://i.ibb.co/7KChYnP/kids.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 40% 40%;
-    justify-content: center;
-    flex-direction: column;
-    align-items: flex-start;
-    padding-left: 40px;
-    color: #333;
-    text-align: center;
-    margin: 0 auto;
-
-    @media @phone {
-      justify-content: flex-start;
-      padding-left: 10px;
-            }
-
-
-  .bigtxt{
-    width: 52vw;
-    font-size: 4rem;
-    font-weight: 700;
-    line-height: 40px;
-    padding-top: 50px;
-
-    @media @phone {
-      font-size: 2.4rem;
-      line-height: 25px;
-      width: 40vw;
-
-            }
-    
-  }
-    .smalltxt {
-      padding-bottom: 200px;
-      width: 52vw;
-      margin-top:8px;
-      font-size: 1.8rem;
-      font-weight: 400;
-      line-height: 20px;
-
-      @media @phone {
-        font-size: 1.4rem;
-        font-weight: 500;
-        line-height: 20px;
-        width: 40vw;
-        padding-bottom: 150px;
-  
-              }
-      
-      
-    }
-
-  }
-  
-
-
-  .teams{
-width: 100vw; 
-
-.team{
-  height: 90vh; 
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 150px;
+  height: 85vh;
+  width: 100%;
+  background-image: url(https://i.ibb.co/7KChYnP/kids.jpg);
+  background-size: cover;
+  background-position: 40% 40%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: space-between;
+  color: #333;
+  text-align: center;
+  margin: 0 auto;
+
+  @media @phone {
+    height: 90vh;
+    background-position: 40% 40%;
+          }
+
+          @media @tablet{
+            height: 90vh;
+            background-position: 40% 40%;
+                  }
+
+.headertxt {
+  width: 52%;
+  height: 40vh;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 5vh;
+
+  @media @minidesktop {
+    width: 60%;
+    margin-bottom:5vh;
+    
+          }
 
   @media @tablet {
-    height: 100vh;
-  }
+    width: 60%;
+    margin-bottom:10vh;
+          }
 
   @media @phone {
-    height: 75%;
-    padding-left: 3px;
-    padding-right: 3px;
-    padding-bottom: 0px;
-    padding-top: 30px;
-  }
+    width: 60%;
+    margin-bottom:7vh;
+          }
 
-  
- }
-
-.ui, .be {
-  border-top: 1px solid #eaecf3;
-  border-bottom: 1px solid #eaecf3;
-  background-color: #f6f7fb;
-  display: flex;
-  justify-content: space-around;
-}
-
-.pic{
-display: flex;
-align-items: flex-start;
-flex-direction: column;
-width: 30vw; 
-height: 45vh;
-margin-right: 30px;
-display: flex;
-align-items: center;
-
-@media @phone {
-  margin-right: 3px;
-}
+       
 
 }
 
- .img{
-   width: 30%;
-   margin-left: 10px;
-   margin-top: 10px;
-   border-radius: 100%;
-   border: 3px solid #cb8b41;
+.bigtxt{
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 40px;
 
-   @media @phone {
-    width: 40%;
-    margin-left: 0px;
-    margin-right: 0px;
-  }
- }
+  @media @minidesktop {
+    font-size: 4.5rem;
+    line-height: 50px;
+          }
 
- .txt{
-   margin-left: 10px;
-   text-align: center;
-   width: 250px;
-   line-height: 20px;
-
-   @media @tablet {
-    width: 210px;
-    line-height: 17px;
-  }
-
+  @media @tablet {
+    font-size: 5rem;
+    line-height: 50px;
+          }
 
   @media @phone {
-    width: 30vh;
-    width: 110px;
-    line-height: 17px;
+    font-size: 2.6rem;
+    line-height: 27px;
+    font-weight: 800;
+          }
+
+  
+}
+  .smalltxt {
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 20px;
+
+    @media @minidesktop {
+      font-size: 2.2rem;
+      line-height: 30px;
+      margin-top: 4px;
+            }
+
+    @media @tablet {
+      font-size: 2.4rem;
+      line-height: 30px;
+      margin-top: 4px;
+            }
+
+
+    @media @phone {
+      margin-top: 4px;
+      font-size: 1.2rem;
+      font-weight: 700;
+      line-height: 16px;
+            }
+    
+          
   }
 
-  
-  
-
-
-   
-   h1 {
-     font-size: 1.8rem;
-     font-weight: 600;
-   }
-
-   h3 {
-     font-size: 1.2rem;
-
-     @media @phone {
-      display: none;
-    }
-   }
- }
-
- .lead {
-  display: flex;
-  justify-content: space-around;
- }
-
 }
-
-
-
-  
-.icon {
-  display: inline-block;
-  width: 2.5rem;
-  height:2.5rem;
-  stroke-width: 0;
-  stroke: currentColor;
-  fill: currentColor;
-  text-align: center;
-  margin: 5px;
-
-  @media @phone {
-    width: 1.5rem;
-    height: 1.5rem;
-  }
-}
-
-
 
 
 
 .buttons{
   display: flex;
   justify-content: space-around;
-  width: 92vw; 
-  margin-bottom: 110px;
+  align-items: center;
+  width: 100%; 
+  height: 25vh;
+  
+  @media @tablet {
+    flex-wrap: wrap;
+    width: 650px;
+    height: 20vh;
+    margin-left: 50px;
+            }
+
+
+  @media @phone {
+  flex-wrap: wrap;
+  width: 300px;
+  height: 28vh;
+  margin-left: 0px;
+          }
+
+    
+  
+  
+  
+  .btn {
+  // .buttonmix (#99b3af, #333, 5px, 0.9rem, 200px, 50px, 0px 20px 30px 20px, 750);
+  text-decoration: none;
+  background: #99b3af;
+  color: #333;
+  border-radius: 5px; 
+  font-size: 0.9rem;
+  width: 200px;
+  height: 60px;
+  font-family: Styrene A Web,sans-serif;
+  letter-spacing: .17rem;
+  border: 0;
 
   @media @minidesktop{
- margin-right: 40px;
-  }
- 
+    margin: none;
+    font-weight: 700;
+    color: #333;
+    border: 1px solid white;
+          }
   
+  @media @tablet{
+    width: 220px;
+    height: 60px;
+    margin: none;
+    font-weight: 700;
+    color: white;
+    border: 1px solid black;
+          }
 
-.btn {
-// .buttonmix (#99b3af, #333, 5px, 0.9rem, 200px, 50px, 0px 20px 30px 20px, 750);
-text-decoration: none;
-background: #99b3af;
-color: #333;
-border-radius: 5px; 
-font-size: 0.9rem;
-width: 200px;
-height: 60px;
-margin: 0px 20px 0px 20px;
-font-weight: 80;
-font-family: Styrene A Web,sans-serif;
-letter-spacing: .17rem;
-border: 0;
 
-@media @minidesktop{
-  width: 150px;
-  height:40px;
-}
-
-@media @phone {
-  width: 70px;
-  height: 35px;
+  @media @phone {
+  width: 120px;
+  height: 45px;
   margin: none;
+  font-weight: 700;
+  color: white;
+  border: 1px solid black;
         }
+  
+    
 
-}
-
-.btn:hover{
+  }
+  
+  .btn:hover{
   background: #cb8b41;
   color: white;
+  }
+  
+  
+  }
+
+
+.teams{
+width: 100%; 
+
+.team{
+height: 100vh; 
+display: flex;
+flex-direction: row;
+align-items: center;
+padding-left: 20px;
+padding-right: 20px;
+
 }
 
 
+.ui, .be {
+border-top: 1px solid #eaecf3;
+border-bottom: 1px solid #eaecf3;
+background-color: #f6f7fb;
+display: flex;
+justify-content: space-around;
 }
+
+.fe {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pic{
+display: flex;
+flex-direction: column;
+width: 33%; 
+display: flex;
+align-items: center;
+}
+
+.img{
+  width: 30%;
+  margin-left: 10px;
+  margin-top: 10px;
+  border-radius: 100%;
+  border: 3px solid #cb8b41;
+
+  @media @minidesktop {
+    width: 60%;
+  }
+
+
+   
+  @media @tablet {
+    width: 65%;
+  }
+
+  @media @phone {
+    width: 85%;
+  }
+
+
+}
+
+.txt{
+  margin-left: 10px;
+  text-align: center;
+  line-height: 20px;
+  
+  h1 {
+    font-size: 1.8rem;
+    font-weight: 600;
+
+    @media @phone {
+      height: 25px;
+      font-weight: 700;
+    }
+  }
+
+  h3 {
+    font-size: 1.2rem;
+
+    @media @tablet {
+      font-size: 1.2rem;
+      font-weight: 700;
+    }
+
+    @media @phone {
+    display: none;
+  }
+
+  }
+}
+
+.lead {
+display: flex;
+justify-content: space-around;
+}
+
+}
+
+.icon {
+display: inline-block;
+width: 2.5rem;
+height:2.5rem;
+stroke-width: 0;
+stroke: currentColor;
+fill: currentColor;
+text-align: center;
+margin: 5px;
+
+@media @phone {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+}
+
+
+
+
 
 // .btts{
 // display: flex;
@@ -281,9 +338,9 @@ border: 0;
 
 
 
-  
+
 html{
-  scroll-behavior: smooth;
+scroll-behavior: smooth;
 }
 
 
