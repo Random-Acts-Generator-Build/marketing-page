@@ -4,16 +4,36 @@ footer {
   color: $primary;
   font-size: 1.2rem;
   margin: 0 auto 50px auto;
-  height: 130px;
-  width: 100vw;
+  height: 150px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  @media (max-width: $mobile) {
+    height: 200px;
+    margin-top: 220px;
+    margin-bottom: 50px;
+    flex-direction: column;
+    h2 {
+      text-align: center;
+    }
+    .ftrlnks {
+      flex-direction: column;
+      text-align: center;
+    }
+}
   h2 {
     font-family: $logoFont;
     font-size: 2.5rem;
     letter-spacing: .07em;
     font-weight: 700;
+    width: 100%;
+    text-align: center;
+  }
+  .ftrlnks {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
   }
   a {
     text-decoration: none;
@@ -22,20 +42,6 @@ footer {
     letter-spacing: .17em;
     &:hover {
       color: $secondary;
-    }
-  }
-  @media (max-width: $tablet) {
-    width: 90vw;
-    h2 {
-      font-size: 2rem;
-    }
-  }
-  @media (max-width: $mobile) {
-    h2 {
-      font-size: 1.8rem;
-    }
-    a {
-      font-size: 1rem;
     }
   }
 }
