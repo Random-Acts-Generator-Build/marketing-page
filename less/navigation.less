@@ -1,97 +1,125 @@
 // Navigation code here
 
 nav {
-    // display: flex;
-    // justify-content: space-between;
-    border-bottom: 1px solid rgb(172, 197, 160);
-    width: 100vw;
-    padding-bottom: 25px;
-    padding-left: 40px;
-    padding-right: 70px;
-    padding-top: 25px;
-    position: sticky;
-    top: 0;
-    background: white;
+// display: flex;
+// justify-content: space-between;
+border-bottom: 1px solid rgb(172, 197, 160);
+width: 100%;
+position: sticky;
+top: 0;
+background: white;
+display: flex;
+justify-content: space-between;
+align-items: center;
+height: 10vh;
+
+@media @tablet {
+    height: 9vh;
+}
+
+@media @phone {
+flex-direction: column;
+justify-content: center;
+height: 12vh;
+}
+
+
+
+.navlogo{
+font-size: 2.7rem;
+font-weight: 700;
+color: #c99034;
+font-family: 'Lobster', cursive;
+letter-spacing: .07em;
+padding-left: 30px;
+width: 35%;
+text-align: center;
+
+
+@media @minidesktop {
+    width: 40%;
+}
+
+@media @tablet {
+    width: 40%;
+}
+
+@media @phone {
+font-size: 2rem;
+padding-left:0px;
+margin-bottom: 7px;
+width: 100%;
+font-weight: 800;
+}
+
+
+}
+.nava{
     display: flex;
     justify-content: space-between;
+    display: flex;
+    width: 40%;
+    margin-right: 40px;
+    
+    
 
-    @media @phone {
+    @media @tablet {
+        width: 50%;
+        }
+    
 
-    }
- 
+@media @phone {
+    width: 100%;
+    justify-content: space-around;
+    margin-right: 0px;
+}
+
     
-    
-    
-.navlogo{
-    font-size: 2.2rem;
+}
+.nava a{
+text-decoration: none;
+font-size: 1rem;
+font-weight: 600;
+font-family: Styrene A Web,sans-serif;
+color: #333;
+height: 100%;
+letter-spacing: .17em;
+padding-top: 5px;
+
+
+@media @minidesktop {
+    font-size: 1.2rem;
+    letter-spacing: 0.11rem;
     font-weight: 700;
-    color: #c99034;
-    font-family: 'Lobster', cursive;
-    letter-spacing: .07em;
-    padding-left: 30px;
+    }
+
+
+@media @tablet {
+    font-size: 1.2rem;
+    letter-spacing: 0.07rem;
+    font-weight: 700;
+    }
 
     
-  @media @phone {
-
-    font-size: 1.4rem;
-    padding-left:10px;
-}
-
-}
-
-
-    .nava{
-        display: flex;
-        justify-content: space-between;
-        display: flex;
-        width: 33.3333vw;
-        align-items: space-between;
-       
-
-        
-@media @minidesktop{
-    width: 43vw;
-  }
-        
-  @media @phone {
-
-        width:66vw;
-       
+@media @phone {
+font-size: 0.95rem;
+letter-spacing: 0.07rem;
+font-weight: 700;
 }
 
 
-        
-    }
-    .nava a{
- text-decoration: none;
-    font-size: 1rem;
-    font-weight: 600;
-    font-family: Styrene A Web,sans-serif;
-    color: #333;
-    height: 100%;
-    letter-spacing: .17em;
-    padding-top: 5px;
 
-       
-  @media @phone {
-
-    font-size: 0.9rem;
-    letter-spacing: 0.05rem;
-   
 }
-
-    }
 }
 
 .nava a:hover{
-    color: #c99034;
-    font-weight: 700;
+color: #c99034;
+font-weight: 700;
 }
 
-.nava a.active{
-
-    
-}
+// .nava a.active{
+// color:  olivedrab;
+// }
 
 
 

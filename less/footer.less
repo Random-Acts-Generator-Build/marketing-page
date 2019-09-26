@@ -1,27 +1,23 @@
 // Footer Styles
 footer {
-    
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-direction: row;
-    justify-cotent: space-between;
+    justify-content: space-around;
+    align-items: center;
     background: #99b3af;
     padding: 76px 42px 80px;
     text-align: center;
 
+
    
-
-
-
     .footer{
-        width: 20vw;
-        padding-left: 130px;
+        width: 20%;
 
-        @media @minidesktop{
-        
-                
-            padding-left: 5px;
+        @media @iphe {
+            font-size: 0.7rem;
         }
+
        
           
 
@@ -33,24 +29,21 @@ footer {
             font-weight: 600;
             color: white;
 
-            @media @minidesktop{
-            font-size: 0.8rem;
-            letter-spacing: .11em;
-            line-height: 1.4rem;
+        
 
-            }
-
+    
 
             .media{ 
                 border-bottom: 2px solid #f88400;
 
-                @media @minidesktop{
-        
-                
+                @media @tablet{ 
                     border-bottom: none;
                 }
-               
+
                 
+                @media @phone{ 
+                    border-bottom: 2px solid #f88400;
+                }
             }
         }
         
@@ -60,3 +53,10 @@ footer {
 .footer a:hover{
     color: #cb8b41;
 }
+
+
+.footout {
+    @media @phone{ 
+        display: none;
+    }
+ }
