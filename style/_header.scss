@@ -3,14 +3,13 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 40% 88%;
-  height: 90vh;
-  width: 100vw;
+  height: 800px;
+  width: 100%;
   display: flex;
   margin: auto;
   color: white;
   font-family: $primaryFont;
-  overflow: hidden;
-  line-height: 1.4;
+  line-height: 1.2;
   .header-box {
     width: 50%;
     height: 80%;
@@ -22,8 +21,12 @@ header {
     padding: 2%;
     @media (max-width: $tablet) {
       font-size: 2rem;
-      margin-top: 8%;
-      width: 50%;
+      margin-top: 12%;
+      width: 65%;
+    }
+    @media (max-width: $mobile) {
+      width: 100%;
+      font-size: 1.8rem;
     }
   }
   .btn {
@@ -43,6 +46,9 @@ header {
     }
     @media (max-width: $tablet) {
       font-size: 1.8rem;
+    }
+    @media (max-width: $mobile) {
+      margin: 10px auto;
     }
   }
   a {

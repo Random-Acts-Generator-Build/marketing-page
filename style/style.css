@@ -99,16 +99,15 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 40% 88%;
-  height: 90vh;
-  width: 100vw;
+  height: 800px;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin: auto;
   color: white;
   font-family: "Ubuntu", sans-serif;
-  overflow: hidden;
-  line-height: 1.4;
+  line-height: 1.2;
 }
 
 header .header-box {
@@ -132,8 +131,15 @@ header .header-box {
 @media (max-width: 800px) {
   header .header-box {
     font-size: 2rem;
-    margin-top: 8%;
-    width: 50%;
+    margin-top: 12%;
+    width: 65%;
+  }
+}
+
+@media (max-width: 500px) {
+  header .header-box {
+    width: 100%;
+    font-size: 1.8rem;
   }
 }
 
@@ -160,31 +166,25 @@ header .btn:hover {
   }
 }
 
+@media (max-width: 500px) {
+  header .btn {
+    margin: 10px auto;
+  }
+}
+
 header a {
   text-decoration: none;
 }
 
 section {
-  height: 100vh;
-  width: 100vw;
+  height: 1000px;
+  width: 100%;
   font-size: 2rem;
   font-family: "Ubuntu", sans-serif;
 }
 
-@media (max-width: 800px) {
-  section {
-    font-size: 1.5rem;
-  }
-}
-
-@media (max-width: 500px) {
-  section {
-    font-size: 1.4rem;
-  }
-}
-
 section .box {
-  height: 32%;
+  height: 30%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -196,12 +196,6 @@ section .box {
   margin: 10px 5px;
 }
 
-@media (max-width: 500px) {
-  section .box {
-    padding: 0 2%;
-  }
-}
-
 section .box1 {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
@@ -210,8 +204,34 @@ section .box1 {
   background: #99b3af;
 }
 
+@media (max-width: 500px) {
+  section .box1 {
+    height: 400px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section .box1 h2 {
+    text-align: center;
+  }
+}
+
 section .box2 {
   background: white;
+}
+
+@media (max-width: 500px) {
+  section .box2 {
+    height: 400px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section .box2 h2 {
+    text-align: center;
+  }
 }
 
 section .box3 {
@@ -222,13 +242,27 @@ section .box3 {
   background: #99b3af;
 }
 
+@media (max-width: 500px) {
+  section .box3 {
+    height: 400px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section .box3 h2 {
+    text-align: center;
+  }
+}
+
 section .txt {
-  width: 55%;
+  width: 50%;
 }
 
 @media (max-width: 500px) {
   section .txt {
-    padding: 0 3%;
+    width: 95%;
+    font-size: 1.8rem;
   }
 }
 
@@ -239,14 +273,19 @@ section img {
           box-shadow: 6px 6px 4px grey;
 }
 
+@media (max-width: 500px) {
+  section img {
+    height: 45%;
+  }
+}
+
 footer {
   background: white;
   border-top: 2px solid #cb8b41;
   color: #cb8b41;
   font-size: 1.2rem;
   margin: 0 auto 50px auto;
-  height: 130px;
-  width: 100vw;
+  height: 150px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -259,11 +298,46 @@ footer {
           align-items: center;
 }
 
+@media (max-width: 500px) {
+  footer {
+    height: 200px;
+    margin-top: 220px;
+    margin-bottom: 50px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer h2 {
+    text-align: center;
+  }
+  footer .ftrlnks {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+}
+
 footer h2 {
   font-family: "Lobster", cursive;
   font-size: 2.5rem;
   letter-spacing: .07em;
   font-weight: 700;
+  width: 100%;
+  text-align: center;
+}
+
+footer .ftrlnks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 80%;
+  margin: auto;
 }
 
 footer a {
@@ -275,23 +349,5 @@ footer a {
 
 footer a:hover {
   color: #99b3af;
-}
-
-@media (max-width: 800px) {
-  footer {
-    width: 90vw;
-  }
-  footer h2 {
-    font-size: 2rem;
-  }
-}
-
-@media (max-width: 500px) {
-  footer h2 {
-    font-size: 1.8rem;
-  }
-  footer a {
-    font-size: 1rem;
-  }
 }
 /*# sourceMappingURL=style.css.map */
