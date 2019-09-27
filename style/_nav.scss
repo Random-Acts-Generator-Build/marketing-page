@@ -1,7 +1,6 @@
 nav {
-  display: flex;
+  @include flex(flex, center, space-around);
   flex-direction: row;
-  align-items: center;
   top: 0;
   background: white;
   width: 100vw;
@@ -14,30 +13,23 @@ nav {
     margin-top: -20px;
   }
   p {
-    font-size: 2.5rem;
-    width: 50vw;
+    width: 35vw;
     padding-left: 40px;
-    font-family: $logoFont;
-    color: $primary;
-    font-weight: 700;
-    letter-spacing: .07em;
+    @include logo($primary);
     @media (max-width: $tablet) {
     font-size: 2.2rem;
     background: white;
     text-align: center;
+    padding-left: 0;
     }
   }
 
   ul {
     width: 33.3333vw;
-    display: flex;
-    justify-content: space-between;
-    font-size: 1.2rem;
+    @include flex(flex, center, space-between);
+    @include links(olivedrab);
     @media (max-width: $tablet) {
-    font-size: 1rem;
     width: 80vw;
-    background: white;
-    font-family: Styrene A Web, sans-serif;
     }
   }
 
@@ -47,11 +39,8 @@ nav {
 
   a {
     text-decoration: none;
-    color: olivedrab;
     font-weight: bold;
     padding: 2px;
-    font-weight: 600;
-    letter-spacing: 0.17em;
     &:hover {
       color: $primary;
     }
