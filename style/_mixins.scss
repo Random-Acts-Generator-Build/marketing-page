@@ -1,5 +1,21 @@
-@mixin flex() {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+@mixin flex($display, $align, $justify) {
+  display: $display;
+  align-items: $align;
+  justify-content: $justify;
+}
+
+@mixin logo($fontColor) {
+  font-family: $logoFont;
+  letter-spacing: .07em;
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: $fontColor;
+}
+
+@mixin links() {
+  font-size: 1rem;
+  font-family: Styrene A Web, sans-serif;
+  color: $fontColor;
+  font-weight: 600;
+  letter-spacing: .17em;
 }

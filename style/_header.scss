@@ -13,9 +13,8 @@ header {
   .header-box {
     width: 50%;
     height: 80%;
-    display: flex;
+    @include flex(flex, center, center);
     flex-direction: column;
-    justify-content: center;
     font-size: 2.5rem;
     font-weight: bold;
     padding: 2%;

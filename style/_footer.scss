@@ -2,16 +2,14 @@ footer {
   background: white;
   border-top: 2px solid $primary;
   color: $primary;
-  font-size: 1.2rem;
   margin: 0 auto 50px auto;
   height: 150px;
-  display: flex;
+  @include flex(flex, center, center);
   flex-direction: column;
-  align-items: center;
   @media (max-width: $mobile) {
     height: 200px;
-    margin-top: 220px;
-    margin-bottom: 50px;
+    margin-top: 230px;
+    margin-bottom: 45px;
     flex-direction: column;
     h2 {
       text-align: center;
@@ -22,24 +20,19 @@ footer {
     }
 }
   h2 {
-    font-family: $logoFont;
-    font-size: 2.5rem;
-    letter-spacing: .07em;
-    font-weight: 700;
+    @include logo($primary);
     width: 100%;
     text-align: center;
   }
   .ftrlnks {
-    display: flex;
-    justify-content: space-between;
+    @include flex(flex, center, space-between);
     width: 80%;
     margin: auto;
   }
   a {
+    @include links($primary);
     text-decoration: none;
-    color: $primary;
-    font-family: Styrene A Web, sans-serif;
-    letter-spacing: .17em;
+    
     &:hover {
       color: $secondary;
     }

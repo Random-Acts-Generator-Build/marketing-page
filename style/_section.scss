@@ -6,11 +6,8 @@ section {
 
   .box {
     height: 30%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    @include flex(flex, center, space-around);
     margin: 10px 5px;
-    
   }
   .box1 {
     flex-direction: row-reverse;
